@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #cce6ff;
+            }
+            header{
+                text-align: center;
+                height: 100px;
+                padding-top: 1px;
+                background-color: #3399ff;
+            }
+            h3{
+                margin-top: 2px;
+                text-align: center;
+                background-color: #80bfff;
+            }
+            form{
+                width: 45%;
+                display: inline-block;
+                margin: 20px;
+            }
+            footer{
+                margin: 3%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Employee Database</h1>
+        </header>
+        <form action="/add" method="post">
+            <fieldset>
+                <h3>add new employee</h3>
+                <label>employee ID</label>
+                <input type="text" id="empId" name="id" required>
+                <br><br>
+                <label>Name</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <form action="/view" method="post">
+            <fieldset>
+                <h3>View an Employee</h3>
+                <label>Employee ID</label>
+                <input type="text" id="empId" name="id" required>
+                <br><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+                <br><br><br>
+            </fieldset>
+        </form>    
+        <form action="/update" method="post">
+            <fieldset>
+                <h3>update An Employee</h3>
+                <label>employee ID</label>
+                <input type="text" id="empId" name="id" required>
+                <br><br>
+                <label>New Name</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <form action="/delete" method="Post">
+            <fieldset>
+                <h3>Delete An Employee</h3>
+                <label>Employee ID</label>
+                <input type="text" id="empId" name="id" required>
+                <br><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+                <br><br><br>
+            </fieldset> 
+        </form>   
+        <footer>
+            <hr>
+            <h4>Please enter 'http://localhost:3000/close' to close the   database connection before closing this window</h4>
+          </footer>
+        </body>
+      </html>    
+
+            </fieldset>
+
+        </form>
+
+
+            
+
+           
+
+        
+    </body>
+</html>    
